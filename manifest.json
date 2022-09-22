@@ -1,20 +1,10 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "simple chrome extension ",
+  "description": "htwm chrome extension sample",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "src/background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
-  "action": {
-    "default_popup": "src/popup.html",
-    "default_icon": {
-      "16": "/images/favcion.png",
-      "32": "/images/favcion.png",
-      "48": "/images/favcion.png",
-      "128": "/images/favcion.png"
-    }
-  },
-  "options_page": "src/options.html"
+  "permissions": ["storage", "activeTab", "scripting", "tabs"]
 }
