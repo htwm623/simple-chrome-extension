@@ -6,11 +6,18 @@
   "background": {
     "service_worker": "src/background.js"
   },
+  "icons": {
+    "16": "./assets/images/favicon.png"
+  },
   "permissions": ["storage", "activeTab", "scripting", "tabs"],
   "content_scripts": [
     {
       "matches": ["https://*.csdn.net/*"],
       "js": ["src/csdn.js"]
+    },
+    {
+      "matches": ["https://jable.tv/my/favourites/videos/*"],
+      "js": ["src/jable.js"]
     }
   ]
 }
