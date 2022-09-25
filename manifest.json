@@ -18,6 +18,10 @@
     {
       "matches": ["https://jable.tv/my/favourites/videos/*"],
       "js": ["src/jable.js"]
+    },
+    {
+      "matches": ["https://www.iconfont.cn/search/*"],
+      "js": ["src/iconfont.js"]
     }
   ]
 }
