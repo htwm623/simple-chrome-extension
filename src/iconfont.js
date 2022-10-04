@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
 
 const handlePageLoaded = () => {
   changeDownloadBtnEvent()
-  console.log('change download event')
 }
 
 const changeDownloadBtnEvent = () => {
@@ -15,8 +14,6 @@ const changeDownloadBtnEvent = () => {
     item.addEventListener('click', (event) => {
       event.stopPropagation()
       event.preventDefault()
-      console.log('btnclicked')
-      console.log('btnclicked')
       const icon = getIconInfo(event.target)
       downloadIconToFile(icon)
     })
