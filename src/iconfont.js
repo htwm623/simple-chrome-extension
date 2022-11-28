@@ -38,7 +38,7 @@ const downloadIconToFile = ({name, content}) => {
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === 'tabUpdate') {
-    console.log('tabl update')
+    console.log('tab update')
     setTimeout(() => {
       changeDownloadBtnEvent()
     }, 1000)

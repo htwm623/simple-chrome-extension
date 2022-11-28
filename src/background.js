@@ -7,4 +7,10 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       chrome.tabs.sendMessage(tabId, {type: 'tabUpdate'})
     }
   }
+
+  if (tab.url && taburl.includes('spankbang.com')) {
+    if (tab.status === 'complete') {
+      chrome.tabs.sendMessage(tabId, {type: 'tabUpdate'})
+    }
+  }
 })
